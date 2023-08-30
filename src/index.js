@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Book from './components/Book';
-import EventExamples from './components/EventExamples';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,11 +27,20 @@ const books = [
 ];
 
 const BookList = () => {
+	const someValue = 'shakeAndBake';
+
+	const displayValue = () => {
+		console.log(someValue);
+	};
+
+	const handleClick = (title) => {
+		console.log(title);
+	};
+
 	return (
 		<section className='booklist'>
-			<EventExamples />
 			{books.map((book) => (
-				<Book key={book.id} data={book} />
+				<Book displayValue={displayValue} handleClick={handleClick} key={book.id} data={book} />
 			))}
 		</section>
 	);

@@ -1,28 +1,12 @@
 const EventExamples = () => {
-	const handleFormInput = (e) => {
-		console.log(e.target);
-		console.log(e.target.name);
-		console.log(e.target.value);
-		console.log('Handle form input');
-	};
-
-	const handleButtonClick = () => {
-		alert('Handle button click');
-	};
-
-	const handleFormSubmission = (e) => {
-		e.preventDefault();
-		console.log('form');
-	};
-
 	return (
 		<section>
-			<form onSubmit={handleFormSubmission}>
+			<form>
 				<h2>Typical Form</h2>
-				<input onChange={handleFormInput} type='text' name='example' style={{ marginBlock: '1rem' }} />
+				<input type='text' name='example' style={{ marginBlock: '1rem' }} />
 				<button type='submit'>Submit</button>
 				<div>
-					<button type='button' onClick={handleButtonClick}>
+					<button type='button' onClick={() => console.log('Clicked')}>
 						Click Me
 					</button>
 				</div>
@@ -30,4 +14,5 @@ const EventExamples = () => {
 		</section>
 	);
 };
+
 export default EventExamples;
