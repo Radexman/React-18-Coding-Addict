@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Book from './components/Book';
+import EventExamples from './components/EventExamples';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,8 +30,9 @@ const books = [
 const BookList = () => {
 	return (
 		<section className='booklist'>
-			{books.map((book, index) => (
-				<Book key={index} data={book} />
+			<EventExamples />
+			{books.map((book) => (
+				<Book key={book.id} data={book} />
 			))}
 		</section>
 	);
