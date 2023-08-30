@@ -30,6 +30,19 @@ body {
 	border-radius: 1rem;
 	padding: 2rem;
 	text-align: center;
+	position: relative;
+}
+
+.book-num {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	background: #cc0f0f;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	display: block;
 }
 
 .book img {
