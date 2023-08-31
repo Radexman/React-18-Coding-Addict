@@ -35,14 +35,14 @@ body {
 
 .book-num {
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	top: 0;
+	left: 0;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border-top-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background: #c36000;
 	color: #fff;
-	background: #cc0f0f;
-	top: 0px;
-	left: 0px;
-	text-align: center;
-	display: block;
 }
 
 .book img {
