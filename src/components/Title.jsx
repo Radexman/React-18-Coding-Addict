@@ -1,8 +1,8 @@
-const Title = () => {
+const Title = ({ heading }) => {
 	return (
-		<div>
-			<h1>Best Selling Books</h1>
-		</div>
+		<header>
+			<h1>{heading}</h1>
+		</header>
 	);
 };
 export default Title;

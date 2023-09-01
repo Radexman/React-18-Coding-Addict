@@ -33,6 +33,12 @@ body {
 	position: relative;
 }
 
+header {
+	padding-inline: 4px;
+	padding-top: 20px;
+	text-align: center;
+}
+
 .book-num {
 	position: absolute;
 	top: 0;
